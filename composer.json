@@ -1,0 +1,17 @@
+{
+    "name": "biracka-mesta/monitor",
+    "description": "RIK Glasačka mesta monitor",
+    "require": {
+        "phpoffice/phpword": "^1.3"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
