@@ -1,0 +1,20 @@
+# Protect data directory
+<Files "*.db">
+    Require all denied
+</Files>
+
+<Files "*.json">
+    Require all denied
+</Files>
+
+# Allow API access
+<FilesMatch "^(get_|health_|export|verify|bulk_).*\.php$">
+    Require all granted
+</FilesMatch>
+
+# Enable rewrite engine (for future clean URLs)
+RewriteEngine On
+
+# Custom error pages
+ErrorDocument 404 /ORG/glasacka-mesta/index.php
+ErrorDocument 403 /ORG/glasacka-mesta/index.php

@@ -1,0 +1,35 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore data directory (except structure)
+data/*.db
+data/*.json
+data/downloads/*
+data/parsed/*
+data/logs/*
+
+# Keep directory structure
+!data/.gitkeep
+!data/downloads/.gitkeep
+!data/parsed/.gitkeep
+!data/logs/.gitkeep
+
+# Ignore backup files
+backups/
+*.bak
+*.backup
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Ignore temporary files
+*.tmp
+*.temp
+~*
+
+# Ignore logs
+*.log
+error_log
